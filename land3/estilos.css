@@ -1,8 +1,8 @@
 :root{
-  --color1:rgb(219,144,.5);
-  --color2:rgba(0, 3, 2, 0.079);
-  --color3:rgba(11,194,211,0.623);
-  --fondo: #f2f2f2;
+  --color1:rgb(152, 118, 221);
+  --color2:rgba(96, 64, 135, 0.079);
+  --color3:rgba(87, 16, 145, 0.623);
+  --fondo: white;
   --titulos:33px;
   --margenes:60px;
   --espacios:10px;
@@ -21,6 +21,8 @@ Body{
 }
 img{
   vertical-align: top;
+  font-weight: 500;
+
 }
 /*preloader*/
 .lds-facebook {
@@ -49,6 +51,8 @@ img{
     left: 45px;
     animation-delay: 0;
   }
+
+/**/
   @keyframes lds-facebook {
     0% {
       top: 6px;
@@ -64,11 +68,11 @@ img{
   header{
     width: 100%;
     height: 700px;
-    background: linear-gradient(to bottom, 
+    background: linear-gradient(to bottom,
     gray,
-    rgba(29,241,171, .6),
+    rgba(64, 37, 92, 0.6),
     rgba(7,109,150, .45)
-    ),url(asdf.jpg);
+    ),url(fondo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -76,18 +80,20 @@ img{
   nav{
     width: 100%;
     position: fixed;
-    box-shadow: 0 0 10px 0 #000;
   }
   .nav1{
-    background: transparent;
     height: 80px;
     color: #f2f2f2;
+    box-shadow: 0 0 10px 0 #000;
+    background-color: black;
+
   }
   .nav2{
     background: var(--fondo);
-    height: 100px;
+    height: 150px;
     color: black;
   }
+
   .contenedor-nav{
     display: flex;
     margin: auto;
@@ -97,7 +103,11 @@ img{
     max-width: 1000px;
     height: inherit;
     overflow: hidden;
+
+
   }
+
+/*generamos los enlaces para la pagina*/
   nav .enlaces a{
     display: inline-block;
     padding: 5px 0;
@@ -105,21 +115,34 @@ img{
     font-size: 17px;
     font-weight: 300;
     text-decoration: none;
-    border-bottom: 9px solid transparent;
+    border-bottom: 9px transparent;
     color: inherit;
   }
   nav.enlaces a:hover{
-    border-bottom: 3px solid black;
+    border-bottom: 6px  black;
     transition: 0,6s;
   }
-  .logo, .a img{
-    height: 80px;
+/*creamos el logo flotante*/
+ 
+  .alineador img{
+    position: fixed;
+    display: block;
+    align-items: center;
+    height: 110px;
+    width: 200px;
+    font-weight: 3000;
+    margin: 0 0px 0px 0;
+
   }
-  .icono{
-    display: none;
-    font-size: 24px;
-    padding: 23.5px 20px;
-  }
+
+/**/
+.icono{
+  display: none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+  background-color: black;
+  align-items: end;
+}
 .textos{
   width: 100%;
   height: 100%;

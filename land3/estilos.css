@@ -75,12 +75,12 @@ img{
     rgb(127, 14, 144),
     rgba(65, 13, 170, 0.6),
     rgba(74, 7, 112, 0.45)
-    ),url(fondo_general.jpeg);
+    ),url(fondo.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
   }
-  header .fondo_general.jpeg{
+  .header fondo_general.jpeg{
     width: 100%;
     height: 100%;
   }
@@ -293,7 +293,7 @@ color: black;
 }
 /*arreglamos el footer con opciones de contacto*/
 .contacto{
-  background-color: rgb(97, 10, 119);
+  background-color: rgb(45, 3, 76);
   height: 500px;
 }
 
@@ -329,7 +329,7 @@ color: black;
 /*creamosla seccion de logros de la empresa*/
 .images{
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 .logros img{
   margin: auto;
@@ -338,3 +338,27 @@ color: black;
   width: 70%;
   height: 150px;
 }
+/*creamos la seccion de logos y
+ descripciones de algunos servicios*/
+.container_logos{
+width: 100%;
+height: 700px;
+justify-content: space-between;
+position: flex;
+background-color: rgb(212, 204, 248);
+}
+.container_logos_space{
+display: flex;
+width: 90%;
+height: 600px;
+margin: auto;
+justify-content: space-between;
+padding-top: 100px;
+
+}
+.cointainer_division{
+  justify-content: space-between;
+  background-color: white;
+  width: 20%;
+}
+

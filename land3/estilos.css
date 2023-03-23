@@ -8,6 +8,9 @@
   --espacios:10px;
   --espacios-contenido:45px;
 }
+html{
+  scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding: 0;
@@ -67,29 +70,34 @@ img{
   /*header*/
   header{
     width: 100%;
-    height: 700px;
+    height: 600px;
     background: linear-gradient(to bottom,
-    gray,
-    rgba(64, 37, 92, 0.6),
-    rgba(7,109,150, .45)
-    ),url(fondo.jpg);
+    rgb(127, 14, 144),
+    rgba(65, 13, 170, 0.6),
+    rgba(74, 7, 112, 0.45)
+    ),url(fondo_general.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
   }
+  header .fondo_general.jpeg{
+    width: 100%;
+    height: 100%;
+  }
   nav{
     width: 100%;
     position: fixed;
+    background-color: rgb(77, 9, 123);
   }
   .nav1{
     height: 80px;
     color: #f2f2f2;
     box-shadow: 0 0 10px 0 #000;
-    background-color: black;
+    background-color: rgb(238, 93, 223), black;
 
   }
   .nav2{
-    background: var(--fondo);
+    background: black;
     height: 150px;
     color: black;
   }
@@ -115,7 +123,7 @@ img{
     font-size: 17px;
     font-weight: 300;
     text-decoration: none;
-    border-bottom: 9px transparent;
+    border-bottom: 9px rgb(234, 233, 239);
     color: inherit;
   }
   nav.enlaces a:hover{
@@ -123,7 +131,7 @@ img{
     transition: 0,6s;
   }
 /*creamos el logo flotante*/
- 
+
   .alineador img{
     position: fixed;
     display: block;
@@ -134,6 +142,8 @@ img{
     margin: 0 0px 0px 0;
 
   }
+/*animamos el menu principal*/
+
 
 /**/
 .icono{
@@ -153,13 +163,23 @@ img{
   color: white;
   overflow: hidden;
   text-align: center;
+  transition: all 0.5s;
 }
+
+/*
+#texto{
+  width: 50%;
+  height: 500px; ;
+  background-color: #000000;
+}*/
+
+
 .textos h1{
-font-size: 80px 
+font-size: 80px;
 }
 .textos h2{
   font-size: 30px;
-  font-weight: 300; 
+  font-weight: 300;
   }
 .contenedor{
   margin:auto;
@@ -214,17 +234,107 @@ font-size: 80px
   padding: var(--espacios);
 }
 .about{
-  background: url(fondo2.jpg);
+  background: white;
   background-size: cover;
   object-fit: cover;
+  box-shadow: 0px 0px 0px 2px rgb(253, 251, 251);
+  background: linear-gradient(white, white, rgb(248, 247, 247)
+  , rgb(251, 249, 249));
+
 }
 .servicios{
   display: flex;
-  color: #f2f2f2;
+  color: #691286;
   justify-content: space-between;
-  margin: 1px;
+  background: white;
+  padding: 10px;
+  background: linear-gradient(white,white,rgb(248, 247, 247), rgb(248, 247, 247));
 
 }
+
+/*arrewglamos las cajas de los servicios*/
+.caja_servicios{
+height: 300px;
+background: 0;
+box-shadow: 0px 0px 0px 1px;
+width: 31%;
+border-radius: 40px;
+background-color: white;
+}
+.caja_servicios img{
+  padding-top: 50px;
+  align-items: center;
+  width: 20%;
+  color: #000;
+}
+.caja_servicios button{
+  background-color: white;
+  height: 40px;
+  width: 150px;
+  border-color: transparent;
+  box-shadow: 0px 0px 2px 0px rgb(139, 24, 120);
+  border-radius: 3px;
+  scroll-margin-top: 5s;
+}
+.caja_servicios p{
+  padding-bottom: 20px;
+}
+.difuminado{
+  width: 100%;
+  height: 80px;
+  box-shadow: 60px 60px 60px 0px rgb(215, 212, 215);
+  border-bottom: 100px;
+  border-radius: 0px 0px 90px 0;
+  position: fixed;
+  padding-bottom: 900px;
+}
 .af{
-color: white;
+color: black;
+}
+/*arreglamos el footer con opciones de contacto*/
+.contacto{
+  background-color: rgb(97, 10, 119);
+  height: 500px;
+}
+
+/*creamos el diseno de la seccion informatiomn*/
+
+.information{
+  width: 100%;
+  height: 700px;
+}
+.regulador_spacio{
+ display:  flex;
+ background-color: white;
+ width: 95%;
+ height: 700px;
+ margin-right: auto;
+ border-radius: 0 250px 250px 0px;
+  box-shadow: 0px 0px 0px 5px rgb(74, 7, 129);
+}
+.box{
+  background-color: transparent;
+  display: flex;
+  height: 400px;
+  width: 42%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.box img{
+  padding-top: 50px;
+  width: 90%;
+  height: 90%;
+}
+/*creamosla seccion de logros de la empresa*/
+.images{
+  width: 100%;
+  height: 400px;
+}
+.logros img{
+  margin: auto;
+  display: flex;
+  padding-top: 40px;
+  width: 70%;
+  height: 150px;
 }

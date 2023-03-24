@@ -345,7 +345,7 @@ width: 100%;
 height: 700px;
 justify-content: space-between;
 position: flex;
-background-color: rgb(212, 204, 248);
+background-color: rgb(212, 197, 247);
 }
 .container_logos_space{
 display: flex;
@@ -354,11 +354,29 @@ height: 600px;
 margin: auto;
 justify-content: space-between;
 padding-top: 100px;
-
+text-align: center;
 }
 .cointainer_division{
   justify-content: space-between;
-  background-color: white;
   width: 20%;
+  text-align: center;
+}
+.logo_description{
+  padding-top: 70px;
+  height: 50%;
+}
+.logo_description_mayor{
+  padding-left: 30px;
+  padding-top:150px;
+  height: 90%;
+  border-left:  rgb(16, 14, 14) 2px solid;
+}
+.logo_description img{
+  width: 50px;
+
+
+}
+.logo_description_mayor img{
+  width: 120px;
 }
 
